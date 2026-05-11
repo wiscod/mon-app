@@ -8,32 +8,40 @@ import { Footer } from '@/components/Footer';
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'wiscod | Portfolio',
-  description: 'Full-stack developer passionate about web technologies, AI, and creative solutions.',
+  title: {
+    default: 'wiscod — Focusing on building thoughtful software',
+    template: '%s · wiscod',
+  },
+  description:
+    'Developer building thoughtful software, one focused project at a time. Web, AI, DevOps.',
   openGraph: {
-    title: 'wiscod | Portfolio',
-    description: 'Full-stack developer passionate about web technologies, AI, and creative solutions.',
+    title: 'wiscod — Portfolio',
+    description: 'Developer building thoughtful software, one focused project at a time.',
     type: 'website',
+    url: 'https://wiscod.dev',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    creator: '@Wiscod_',
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors`}>
+    <html lang="en" suppressHydrationWarning className={inter.variable}>
+      <body className="font-sans bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex flex-col min-h-screen">
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
