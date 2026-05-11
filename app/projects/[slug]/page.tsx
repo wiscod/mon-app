@@ -34,7 +34,7 @@ export default async function ProjectPage({ params }: PageProps) {
   const color = getLanguageColor(repo.language);
 
   const formatDate = (date: string) =>
-    new Date(date).toLocaleDateString('en', {
+    new Date(date).toLocaleDateString('fr-FR', {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
@@ -49,7 +49,7 @@ export default async function ProjectPage({ params }: PageProps) {
             className="inline-flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors mb-12"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to projects
+            Retour aux projets
           </Link>
         </FadeIn>
 
@@ -95,7 +95,7 @@ export default async function ProjectPage({ params }: PageProps) {
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-5 py-3 rounded-full bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-sm font-medium hover:opacity-90 transition-opacity"
             >
-              View source
+              Voir le code
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </Link>
             {repo.homepage && (
@@ -105,7 +105,7 @@ export default async function ProjectPage({ params }: PageProps) {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
               >
-                Live demo
+                Démo en ligne
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </Link>
             )}
@@ -117,7 +117,7 @@ export default async function ProjectPage({ params }: PageProps) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-neutral-200 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 rounded-2xl overflow-hidden mb-16">
             <StatCell
               icon={<Star className="w-4 h-4" />}
-              label="Stars"
+              label="Étoiles"
               value={repo.stargazers_count}
             />
             <StatCell
@@ -127,12 +127,12 @@ export default async function ProjectPage({ params }: PageProps) {
             />
             <StatCell
               icon={<Eye className="w-4 h-4" />}
-              label="Watchers"
+              label="Observateurs"
               value={repo.watchers_count}
             />
             <StatCell
               icon={<Calendar className="w-4 h-4" />}
-              label="Updated"
+              label="Mis à jour"
               value={formatDate(repo.updated_at)}
               isText
             />
@@ -144,7 +144,7 @@ export default async function ProjectPage({ params }: PageProps) {
           <FadeIn delay={0.35}>
             <div className="mb-16">
               <h2 className="text-sm font-medium uppercase tracking-widest text-neutral-500 dark:text-neutral-400 mb-6">
-                Highlights
+                Points forts
               </h2>
               <ul className="space-y-3">
                 {meta.highlights.map((highlight) => (
@@ -164,12 +164,12 @@ export default async function ProjectPage({ params }: PageProps) {
         {/* Metadata */}
         <FadeIn delay={0.4}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 border-t border-neutral-200 dark:border-neutral-800">
-            <MetaItem label="Created" value={formatDate(repo.created_at)} />
-            <MetaItem label="Last push" value={formatDate(repo.pushed_at)} />
-            <MetaItem label="Open issues" value={repo.open_issues_count.toString()} />
+            <MetaItem label="Créé le" value={formatDate(repo.created_at)} />
+            <MetaItem label="Dernier push" value={formatDate(repo.pushed_at)} />
+            <MetaItem label="Issues ouvertes" value={repo.open_issues_count.toString()} />
             <MetaItem
-              label="Size"
-              value={`${(repo.size / 1024).toFixed(1)} MB`}
+              label="Taille"
+              value={`${(repo.size / 1024).toFixed(1)} Mo`}
             />
           </div>
         </FadeIn>

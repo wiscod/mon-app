@@ -13,16 +13,18 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'wiscod — Focusing on building thoughtful software',
+    default: 'wiscod — Construire des logiciels réfléchis',
     template: '%s · wiscod',
   },
   description:
-    'Developer building thoughtful software, one focused project at a time. Web, AI, DevOps.',
+    'Développeur qui construit des logiciels réfléchis, un projet ciblé à la fois. Web, IA, DevOps.',
   openGraph: {
     title: 'wiscod — Portfolio',
-    description: 'Developer building thoughtful software, one focused project at a time.',
+    description:
+      'Développeur qui construit des logiciels réfléchis, un projet ciblé à la fois.',
     type: 'website',
     url: 'https://wiscod.dev',
+    locale: 'fr_FR',
   },
   twitter: {
     card: 'summary_large_image',
@@ -36,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={inter.variable}>
+    <html lang="fr" suppressHydrationWarning className={inter.variable}>
       <body className="font-sans bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />

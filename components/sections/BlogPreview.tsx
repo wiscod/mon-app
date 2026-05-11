@@ -20,10 +20,10 @@ export function BlogPreview({ posts }: { posts: Post[] }) {
         <div className="flex items-end justify-between mb-16">
           <div>
             <p className="text-sm font-medium uppercase tracking-widest text-neutral-500 dark:text-neutral-400 mb-3">
-              Writing
+              Écrits
             </p>
             <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-white">
-              From the blog.
+              Sur le blog.
             </h2>
           </div>
           <FadeIn>
@@ -31,7 +31,7 @@ export function BlogPreview({ posts }: { posts: Post[] }) {
               href="/blog"
               className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
             >
-              All posts
+              Tous les articles
               <ArrowRight className="w-4 h-4" />
             </Link>
           </FadeIn>
@@ -58,14 +58,14 @@ function PostRow({ post }: { post: Post }) {
           <div className="flex-1">
             <div className="flex items-center gap-3 text-xs text-neutral-500 dark:text-neutral-400 mb-3">
               <time>
-                {new Date(post.date).toLocaleDateString('en', {
+                {new Date(post.date).toLocaleDateString('fr-FR', {
                   month: 'long',
                   day: 'numeric',
                   year: 'numeric',
                 })}
               </time>
               <span>·</span>
-              <span>{post.readingTime} read</span>
+              <span>{post.readingTime} de lecture</span>
             </div>
             <h3 className="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white mb-2 group-hover:text-neutral-600 dark:group-hover:text-neutral-300 transition-colors">
               {post.title}

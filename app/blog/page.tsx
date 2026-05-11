@@ -6,7 +6,7 @@ import { FadeIn } from '@/components/animations/FadeIn';
 
 export const metadata = {
   title: 'Blog',
-  description: 'Notes, essays, and tutorials by wiscod.',
+  description: 'Notes, essais et tutoriels par wiscod.',
 };
 
 export default function BlogPage() {
@@ -21,13 +21,13 @@ export default function BlogPage() {
             className="inline-flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors mb-12"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back home
+            Retour à l&apos;accueil
           </Link>
         </FadeIn>
 
         <FadeIn delay={0.1}>
           <p className="text-sm font-medium uppercase tracking-widest text-neutral-500 dark:text-neutral-400 mb-3">
-            Writing
+            Écrits
           </p>
         </FadeIn>
         <FadeIn delay={0.15}>
@@ -37,7 +37,8 @@ export default function BlogPage() {
         </FadeIn>
         <FadeIn delay={0.2}>
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-16 max-w-2xl">
-            Thoughts on web development, AI, focus, and the craft of building software.
+            Réflexions sur le développement web, l&apos;IA, la concentration et
+            l&apos;art de construire des logiciels.
           </p>
         </FadeIn>
 
@@ -49,14 +50,14 @@ export default function BlogPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 text-xs text-neutral-500 dark:text-neutral-400 mb-3">
                       <time>
-                        {new Date(post.date).toLocaleDateString('en', {
+                        {new Date(post.date).toLocaleDateString('fr-FR', {
                           month: 'long',
                           day: 'numeric',
                           year: 'numeric',
                         })}
                       </time>
                       <span>·</span>
-                      <span>{post.readingTime} read</span>
+                      <span>{post.readingTime} de lecture</span>
                     </div>
                     <h2 className="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white mb-2 group-hover:text-neutral-600 dark:group-hover:text-neutral-300 transition-colors">
                       {post.title}

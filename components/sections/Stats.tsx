@@ -35,19 +35,19 @@ function CountUp({ end, duration = 1.2, suffix = '' }: { end: number; duration?:
 
 export function Stats({ stats }: { stats: GitHubStats }) {
   const items = [
-    { label: 'Public repositories', value: stats.totalRepos, suffix: '' },
-    { label: 'Years on GitHub', value: stats.yearsActive, suffix: '+' },
-    { label: 'Languages used', value: stats.languages.length, suffix: '' },
-    { label: 'Total stars earned', value: stats.totalStars, suffix: '' },
+    { label: 'Dépôts publics', value: stats.totalRepos, suffix: '' },
+    { label: 'Années sur GitHub', value: stats.yearsActive, suffix: '+' },
+    { label: 'Langages utilisés', value: stats.languages.length, suffix: '' },
+    { label: 'Étoiles obtenues', value: stats.totalStars, suffix: '' },
   ];
 
   return (
     <section id="stats" className="py-24 md:py-32 border-t border-neutral-200 dark:border-neutral-800">
       <Container>
         <SectionHeading
-          eyebrow="By the numbers"
-          title="A snapshot of my work."
-          description="Public GitHub data, fetched at build time and refreshed every hour."
+          eyebrow="En chiffres"
+          title="Un aperçu de mon travail."
+          description="Données GitHub publiques, récupérées au build et rafraîchies toutes les heures."
         />
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">
@@ -69,7 +69,7 @@ export function Stats({ stats }: { stats: GitHubStats }) {
         <div className="mt-20">
           <FadeIn>
             <h3 className="text-sm font-medium uppercase tracking-widest text-neutral-500 dark:text-neutral-400 mb-8">
-              Language breakdown
+              Répartition par langage
             </h3>
           </FadeIn>
 

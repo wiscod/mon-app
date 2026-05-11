@@ -39,21 +39,21 @@ export default async function PostPage({ params }: PageProps) {
             className="inline-flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors mb-12"
           >
             <ArrowLeft className="w-4 h-4" />
-            All posts
+            Tous les articles
           </Link>
         </FadeIn>
 
         <FadeIn delay={0.1}>
           <div className="flex items-center gap-3 text-sm text-neutral-500 dark:text-neutral-400 mb-6">
             <time>
-              {new Date(post.date).toLocaleDateString('en', {
+              {new Date(post.date).toLocaleDateString('fr-FR', {
                 month: 'long',
                 day: 'numeric',
                 year: 'numeric',
               })}
             </time>
             <span>·</span>
-            <span>{post.readingTime} read</span>
+            <span>{post.readingTime} de lecture</span>
           </div>
         </FadeIn>
 

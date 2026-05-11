@@ -35,7 +35,7 @@ export function Navbar() {
           </Link>
 
           <div className="flex items-center gap-1 md:gap-2">
-            <NavLink href="/#projects">Projects</NavLink>
+            <NavLink href="/#projects">Projets</NavLink>
             <NavLink href="/#stats">Stats</NavLink>
             <NavLink href="/blog">Blog</NavLink>
             <NavLink href="/#contact">Contact</NavLink>

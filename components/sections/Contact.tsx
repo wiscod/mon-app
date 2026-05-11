@@ -39,18 +39,18 @@ export function Contact() {
       <Container size="sm">
         <FadeIn>
           <p className="text-sm font-medium uppercase tracking-widest text-neutral-500 dark:text-neutral-400 mb-3">
-            Get in touch
+            Contact
           </p>
         </FadeIn>
         <FadeIn delay={0.1}>
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-white mb-6">
-            Let&apos;s build something.
+            Construisons quelque chose.
           </h2>
         </FadeIn>
         <FadeIn delay={0.2}>
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-12 max-w-md">
-            I&apos;m open to collaborations, freelance work, and conversations about
-            interesting projects.
+            Je suis ouvert aux collaborations, aux missions freelance et aux échanges
+            autour de projets intéressants.
           </p>
         </FadeIn>
 
@@ -62,7 +62,7 @@ export function Contact() {
                   htmlFor="name"
                   className="block text-xs font-medium text-neutral-500 dark:text-neutral-400 mb-2 uppercase tracking-widest"
                 >
-                  Name
+                  Nom
                 </label>
                 <input
                   id="name"
@@ -71,7 +71,7 @@ export function Contact() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 bg-transparent border-b border-neutral-200 dark:border-neutral-800 focus:border-neutral-900 dark:focus:border-white focus:outline-none text-neutral-900 dark:text-white transition-colors"
-                  placeholder="Your name"
+                  placeholder="Votre nom"
                 />
               </div>
 
@@ -89,7 +89,7 @@ export function Contact() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 bg-transparent border-b border-neutral-200 dark:border-neutral-800 focus:border-neutral-900 dark:focus:border-white focus:outline-none text-neutral-900 dark:text-white transition-colors"
-                  placeholder="you@example.com"
+                  placeholder="vous@exemple.com"
                 />
               </div>
 
@@ -107,7 +107,7 @@ export function Contact() {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 bg-transparent border-b border-neutral-200 dark:border-neutral-800 focus:border-neutral-900 dark:focus:border-white focus:outline-none text-neutral-900 dark:text-white resize-none transition-colors"
-                  placeholder="Tell me about your project..."
+                  placeholder="Parlez-moi de votre projet..."
                 />
               </div>
 
@@ -116,15 +116,15 @@ export function Contact() {
                 disabled={status === 'sending'}
                 className="group inline-flex items-center gap-2 px-5 py-3 rounded-full bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-sm font-medium hover:opacity-90 transition-opacity disabled:opacity-50"
               >
-                {status === 'sending' && 'Sending...'}
+                {status === 'sending' && 'Envoi…'}
                 {status === 'idle' && (
                   <>
-                    Send message
+                    Envoyer le message
                     <Send className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
                   </>
                 )}
-                {status === 'sent' && 'Message sent ✓'}
-                {status === 'error' && 'Error, please try again'}
+                {status === 'sent' && 'Message envoyé ✓'}
+                {status === 'error' && 'Erreur, veuillez réessayer'}
               </button>
             </form>
           </FadeIn>

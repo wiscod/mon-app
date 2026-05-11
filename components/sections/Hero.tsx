@@ -19,7 +19,7 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            Available for projects
+            Disponible pour vos projets
           </p>
         </motion.div>
 
@@ -29,13 +29,13 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
           className="text-5xl md:text-7xl font-semibold tracking-tighter text-neutral-900 dark:text-white leading-[1.05] mb-8"
         >
-          Building thoughtful
+          Construire des logiciels
           <br />
-          software,
-          <span className="text-neutral-400 dark:text-neutral-600"> one</span>
+          réfléchis,
+          <span className="text-neutral-400 dark:text-neutral-600"> un</span>
           <br />
-          <span className="text-neutral-400 dark:text-neutral-600">focused project</span>{' '}
-          at a time.
+          <span className="text-neutral-400 dark:text-neutral-600">projet ciblé</span>{' '}
+          à la fois.
         </motion.h1>
 
         <motion.p
@@ -44,8 +44,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
           className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-xl leading-relaxed mb-12"
         >
-          I&apos;m wiscod — a developer exploring web technologies, AI, and DevOps. I
-          ship small focused projects across many languages.
+          Je suis wiscod — un développeur qui explore les technologies web,
+          l&apos;IA et le DevOps. Je livre des projets soignés dans de nombreux langages.
         </motion.p>
 
         <motion.div
@@ -58,14 +58,14 @@ export function Hero() {
             href="#projects"
             className="group inline-flex items-center gap-2 px-5 py-3 rounded-full bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-sm font-medium hover:opacity-90 transition-opacity"
           >
-            View projects
+            Voir mes projets
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
           </Link>
           <Link
             href="#contact"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
           >
-            Get in touch
+            Me contacter
           </Link>
         </motion.div>
 
@@ -76,7 +76,7 @@ export function Hero() {
           className="mt-32 text-neutral-400 dark:text-neutral-600 text-sm flex items-center gap-2"
         >
           <ArrowDown className="w-4 h-4 animate-bounce" />
-          Scroll to explore
+          Faites défiler pour explorer
         </motion.div>
       </Container>
     </section>

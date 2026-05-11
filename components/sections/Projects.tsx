@@ -18,9 +18,9 @@ export function Projects({ repos }: { repos: Repository[] }) {
     >
       <Container>
         <SectionHeading
-          eyebrow="Selected work"
-          title="Projects."
-          description={`${repos.length} public projects across web, AI, DevOps, and more.`}
+          eyebrow="Sélection de projets"
+          title="Projets."
+          description={`${repos.length} projets publics couvrant le web, l'IA, le DevOps et plus encore.`}
         />
 
         <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-px bg-neutral-200 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 rounded-2xl overflow-hidden">
@@ -73,11 +73,11 @@ function ProjectRow({ repo }: { repo: Repository }) {
           )}
           {repo.homepage && (
             <span className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">
-              Live
+              En ligne
             </span>
           )}
           <span className="text-xs text-neutral-400 dark:text-neutral-600 ml-auto">
-            {new Date(repo.updated_at).toLocaleDateString('en', {
+            {new Date(repo.updated_at).toLocaleDateString('fr-FR', {
               month: 'short',
               year: 'numeric',
             })}
