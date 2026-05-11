@@ -13,13 +13,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'wiscod — Construire des logiciels réfléchis',
-    template: '%s · wiscod',
+    default: 'Edy — Construire des logiciels réfléchis',
+    template: '%s · Edy',
   },
   description:
     'Développeur qui construit des logiciels réfléchis, un projet ciblé à la fois. Web, IA, DevOps.',
   openGraph: {
-    title: 'wiscod — Portfolio',
+    title: 'Edy — Portfolio',
     description:
       'Développeur qui construit des logiciels réfléchis, un projet ciblé à la fois.',
     type: 'website',

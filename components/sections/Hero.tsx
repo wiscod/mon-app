@@ -44,7 +44,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
           className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-xl leading-relaxed mb-12"
         >
-          Je suis wiscod — un développeur qui explore les technologies web,
+          Je suis Edy — un développeur qui explore les technologies web,
           l&apos;IA et le DevOps. Je livre des projets soignés dans de nombreux langages.
         </motion.p>
 

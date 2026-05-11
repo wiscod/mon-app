@@ -8,7 +8,7 @@ export function Footer() {
         <div className="py-12 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <p className="text-sm text-neutral-500 dark:text-neutral-400">
-              © {new Date().getFullYear()} wiscod. Conçu avec soin.
+              © {new Date().getFullYear()} Edy. Conçu avec soin.
             </p>
           </div>
           <div className="flex items-center gap-6 text-sm">
