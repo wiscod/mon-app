@@ -13,15 +13,15 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Edy — Construire des logiciels réfléchis',
+    default: 'Edy — Sécurité réfléchie, perspective de développeur',
     template: '%s · Edy',
   },
   description:
-    'Développeur qui construit des logiciels réfléchis, un projet ciblé à la fois. Web, IA, DevOps.',
+    'Analyste SOC et étudiant en Master Cybersécurité. Profil offensif à travers les CTFs. Sécurité applicative avec une perspective de développeur.',
   openGraph: {
-    title: 'Edy — Portfolio',
+    title: 'Edy — Portfolio Cybersécurité',
     description:
-      'Développeur qui construit des logiciels réfléchis, un projet ciblé à la fois.',
+      'Analyste SOC et étudiant en Master Cybersécurité. Sécurité applicative avec une perspective de développeur.',
     type: 'website',
     url: 'https://wiscod.dev',
     locale: 'fr_FR',

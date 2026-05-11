@@ -29,23 +29,20 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
           className="text-5xl md:text-7xl font-semibold tracking-tighter text-neutral-900 dark:text-white leading-[1.05] mb-8"
         >
-          Construire des logiciels
+          Sécurité réfléchie,
           <br />
-          réfléchis,
-          <span className="text-neutral-400 dark:text-neutral-600"> un</span>
+          perspective de
           <br />
-          <span className="text-neutral-400 dark:text-neutral-600">projet ciblé</span>{' '}
-          à la fois.
+          <span className="text-neutral-400 dark:text-neutral-600">développeur.</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
-          className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-xl leading-relaxed mb-12"
+          className="text-lg md:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl leading-relaxed mb-12"
         >
-          Je suis Edy — un développeur qui explore les technologies web,
-          l&apos;IA et le DevOps. Je livre des projets soignés dans de nombreux langages.
+          Étudiant en Master Cybersécurité à l&apos;ESTIAM, j&apos;ai acquis une première expérience concrète en tant qu&apos;analyste SOC chez Ziwit — deux stages de six mois à surveiller, analyser et répondre à des incidents réels. En parallèle, je développe un profil offensif actif à travers les CTFs et les plateformes HackTheBox, TryHackMe et PicoCTF. Mon background en développement web me permet d&apos;aborder la sécurité applicative avec les yeux d&apos;un développeur qui sait exactement où chercher.
         </motion.p>
 
         <motion.div
